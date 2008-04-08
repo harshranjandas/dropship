@@ -1,0 +1,20 @@
+<h1>Customer</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/customer/edit">TEST Test Customer</a> <a href="/admin/customer/delete">delete</a></div>
+
+<?php foreach ($this->customers as $customer) : ?>
+
+<div><?php echo $customer->customer_number ?> <?php echo $customer->company_name ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/customer/index">Summary</a>
+	<a href="/admin/customer/add">Add</a>
+</p>

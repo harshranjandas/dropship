@@ -1,0 +1,20 @@
+<h1>Manufacturer</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/manufacturer/edit">TEST Test Manufacturer</a> <a href="/admin/manufacturer/delete">delete</a></div>
+
+<?php foreach ($this->manufacturers as $manufacturer) : ?>
+
+<div><?php echo $manufacturer->code ?> <?php echo $manufacturer->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/manufacturer/index">Summary</a>
+	<a href="/admin/manufacturer/add">Add</a>
+</p>

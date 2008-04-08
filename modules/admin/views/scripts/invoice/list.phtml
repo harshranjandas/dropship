@@ -1,0 +1,20 @@
+<h1>invoice</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/invoice/edit">TEST Test invoice</a> <a href="/admin/invoice/delete">delete</a></div>
+
+<?php foreach ($this->invoices as $invoice) : ?>
+
+<div><?php echo $invoice->code ?> <?php echo $invoice->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/invoice/index">Summary</a>
+	<a href="/admin/invoice/add">Add</a>
+</p>

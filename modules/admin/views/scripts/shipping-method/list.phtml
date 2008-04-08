@@ -1,0 +1,20 @@
+<h1>Shipping Method</h1>
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/shipping-method/edit">TEST Test shipping-method</a> <a href="/admin/shipping-method/delete">delete</a></div>
+
+<?php foreach ($this->shipping_methods as $shipping_method) : ?>
+
+<div><?php echo $shipping_method->code ?> <?php echo $shipping_method->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/shipping-method/index">Summary</a>
+	<a href="/admin/shipping-method/add">Add</a>
+</p>

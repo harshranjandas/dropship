@@ -1,0 +1,20 @@
+<h1>Product</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/product/edit">TEST Test Product</a> <a href="/admin/product/delete">delete</a></div>
+
+<?php foreach ($this->products as $product) : ?>
+
+<div><?php echo $product->sku ?> <?php echo $product->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/product/index">Summary</a>
+	<a href="/admin/product/add">Add</a>
+</p>

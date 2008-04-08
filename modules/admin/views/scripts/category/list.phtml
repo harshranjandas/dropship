@@ -1,0 +1,20 @@
+<h1>Category</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/category/edit">TEST Test Category</a> <a href="/admin/category/delete">delete</a></div>
+
+<?php foreach ($this->categories as $category) : ?>
+
+<div><?php echo $category->code ?> <?php echo $category->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/category/index">Summary</a>
+	<a href="/admin/category/add">Add</a>
+</p>
