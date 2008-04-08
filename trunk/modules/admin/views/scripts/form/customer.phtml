@@ -1,0 +1,65 @@
+<p><label for="customer_customer_number">Customer Number</label><br/>
+<input id="customer_customer_number" name="customer[customer_number]" type="text" value="<?php echo $this->escape($customer->customer_number) ?>" size="15" /></p>
+
+<p>
+<span style="display:block;float:left;">
+	Prefix<br/>
+	<?php echo $this->formSelect('customer[prefix]', $customer->prefix, array('id' => 'customer_prefix'), array('', 'Mr.', 'Ms.', 'Mrs.')) ?>
+</span>
+
+<span style="display:block;float:left;">
+	First<br/>
+	<input id="customer_first_name" name="customer[first_name]" type="text" value="<?php echo $this->escape($customer->first_name) ?>" size="25" />
+</span>
+
+<span style="display:block;float:left;">
+	M.I.<br/>
+	<input id="customer_middle_name" name="customer[middle_name]" type="text" value="<?php echo $this->escape($customer->middle_name) ?>" size="3" />
+</span>
+
+<span style="display:block;float:left;">
+	Last (Family)<br/>
+	<input id="customer_last_name" name="customer[last_name]" type="text" value="<?php echo $this->escape($customer->last_name) ?>" size="25" />
+</span>
+
+<span style="display:block;">
+	Suffix<br/>
+	<?php echo $this->formSelect('customer[suffix]', $customer->suffix, array('id' => 'customer_suffix'), array('', 'Jr.', 'Sr.', 'III', 'PhD', 'Esq.')) ?>
+</span>
+</p>
+
+<p><label for="customer_company_name">Company Name</label><br/>
+<input id="customer_company_name" name="customer[company_name]" type="text" value="<?php echo $this->escape($customer->company_name) ?>" size="35" /></p>
+
+<p><label for="customer_address1">Address</label><br/>
+<input id="customer_address1" name="customer[address1]" type="text" value="<?php echo $this->escape($customer->address1) ?>" size="35" /><sub><a href="#" onclick="$('customer_address2_field').show();this.hide();">more</a></sub></p>
+
+<p id="customer_address2_field" style="display:none;"><label for="customer_address2">Address (Cont.)</label><br/>
+<input id="customer_address2" name="customer[address2]" type="text" value="<?php echo $this->escape($customer->address2) ?>" size="35" /><sub><a href="#" onclick="$('customer_address3_field').show();this.hide();">more</a></sub></p>
+
+<p id="customer_address3_field" style="display:none;"><label for="customer_address3">Address (Cont.)</label><br/>
+<input id="customer_address3" name="customer[address3]" type="text" value="<?php echo $this->escape($customer->address3) ?>" size="35" /></p>
+
+<p><label for="customer_zip">Zip / Postal Code</label><br/>
+<input id="customer_zip" name="customer[zip]" type="text" value="<?php echo $this->escape($customer->zip) ?>" size="15" /></p>
+
+<p><label for="customer_city">City</label><br/>
+<input id="customer_city" name="customer[city]" type="text" value="<?php echo $this->escape($customer->city) ?>" size="35" /></p>
+
+<p><label for="customer_state">State / Provence</label><br/>
+<input id="customer_state" name="customer[state]" type="text" value="<?php echo $this->escape($customer->state) ?>" size="5" /></p>
+
+<p><label for="customer_country">Country</label><br/>
+<?php echo $this->formSelect('customer[country]', $customer->country, array('id' => 'customer_country'), array('US' => 'United States', 'CA' => 'Canada')) ?></p>
+
+<p><label for="customer_phone1">Phone (Day)</label><br/>
+<input id="customer_phone1" name="customer[phone1]" type="text" value="<?php echo $this->escape($customer->phone1) ?>" size="25" /></p>
+
+<p><label for="customer_phone2">Phone (Night)</label><br/>
+<input id="customer_phone2" name="customer[phone2]" type="text" value="<?php echo $this->escape($customer->phone2) ?>" size="25" /></p>
+
+<p><label for="customer_fax">Fax</label><br/>
+<input id="customer_fax" name="customer[fax]" type="text" value="<?php echo $this->escape($customer->fax) ?>" size="25" /></p>
+
+<p><label for="customer_email">Email</label><br/>
+<input id="customer_email" name="customer[email]" type="text" value="<?php echo $this->escape($customer->email) ?>" size="25" /></p>

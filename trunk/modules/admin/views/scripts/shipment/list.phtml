@@ -1,0 +1,20 @@
+<h1>Shipment</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/shipment/edit">TEST Test shipment</a> <a href="/admin/shipment/delete">delete</a></div>
+
+<?php foreach ($this->shipments as $shipment) : ?>
+
+<div><?php echo $shipment->code ?> <?php echo $shipment->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/shipment/index">Summary</a>
+	<a href="/admin/shipment/add">Add</a>
+</p>

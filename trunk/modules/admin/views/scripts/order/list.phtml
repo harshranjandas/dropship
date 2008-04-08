@@ -1,0 +1,20 @@
+<h1>Order</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/order/edit">TEST Test order</a> <a href="/admin/order/delete">delete</a></div>
+
+<?php foreach ($this->orders as $order) : ?>
+
+<div><?php echo $order->code ?> <?php echo $order->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/order/index">Summary</a>
+	<a href="/admin/order/add">Add</a>
+</p>

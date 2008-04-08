@@ -1,0 +1,20 @@
+<h1>User</h1> 
+
+<h2>List</h2>
+
+<div class="itemList">
+	
+	<div><a href="/admin/user/edit">TEST Test User</a> <a href="/admin/user/delete">delete</a></div>
+
+<?php foreach ($this->users as $user) : ?>
+
+<div><?php echo $user->code ?> <?php echo $user->description ?></div>
+
+<?php endforeach ?>
+
+</div>
+
+<p>
+	<a href="/admin/user/index">Summary</a>
+	<a href="/admin/user/add">Add</a>
+</p>

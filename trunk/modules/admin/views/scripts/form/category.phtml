@@ -1,0 +1,8 @@
+<p><label for="category_code">Code</label><br/>
+<input id="category_code" name="category[code]" type="text" value="<?php echo $this->escape($category->code) ?>" size="10" /></p>
+
+<p><label for="category_name">Name</label><br/>
+<input id="category_name" name="category[name]" type="text" value="<?php echo $this->escape($category->name) ?>" size="35" /></p>
+
+<p><label for="category_description">Description</label><br/>
+<textarea id="category_description" name="category[description]" rows="15" cols="35"><?php echo $this->escape($category->description) ?></textarea></p>
